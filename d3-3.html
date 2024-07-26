@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 10px;;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .c{
+            display:flex;
+            flex-wrap: wrap;
+        }
+        .box{
+            flex:1;
+            min-width: 25%;
+            box-sizing: border-box;
+            padding: 20px;
+            border: 2px solid black;
+            text-align: center;
+        }
+        @media (max-width:768px) {
+            .box{
+                min-width: 50%;
+            }
+            
+        }
+        @media (max-width:480px) {
+            .box{
+                min-width: 100%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="c">
+        <div class="box" style="background-color:mediumorchid;">Dabba 1</div>
+        <div class="box" style="background-color: lightblue;">Dabba 2</div>
+        <div class="box" style="background-color: khaki;">Dabba 3</div>
+        <div class="box" style="background-color: crimson;">Dabba 4</div>
+    </div>
+</body>
+</html>
